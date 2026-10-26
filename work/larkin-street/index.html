@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Larkin Street Youth Services — From the other side of the door — Boss Huang</title>
+<meta name="description" content="A YouthForce marketing internship at Larkin Street Youth Services, told in chapters: brand listening, event video, writing, the stage and the lens, and a final integrated campaign.">
+<!-- Keep out of search until the campaign launches (Nov 2) and Larkin Street OKs sharing. Remove this line then. -->
+<meta property="og:title" content="Larkin Street Youth Services — Boss Huang">
+<meta property="og:description" content="A YouthForce marketing internship, told in chapters, ending with an integrated campaign about what happens after housing.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../../assets/img/covers/larkin-street.jpg">
+<meta name="theme-color" content="#232323">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+/* ---------- Page-only styles: chapters, milestones, interactions ---------- */
+.progress { position: fixed; left: 0; top: 0; height: 3px; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: var(--accent-fill); z-index: 70; }
+.hero2 { padding: 56px 0 24px; display: flex; flex-direction: column; gap: 22px; }
+.hero2 h1 { font-size: clamp(40px, 6vw, 84px); max-width: 15ch; }
+.hero2 h1 i { font-family: var(--serif); font-weight: 400; font-style: italic; color: var(--accent); letter-spacing: -0.01em; }
+.hero2 .hook { max-width: 60ch; }
+.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.hint { font-family: var(--mono); font-size: 11px; color: var(--faint); }
+.toc { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin: 18px 0 8px; }
+.toc a { display: flex; flex-direction: column; gap: 8px; padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--tile); color: var(--text); text-decoration: none; transition: transform .25s, border-color .25s, box-shadow .25s; }
+.toc a:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: var(--glow); }
+.toc a b { font-size: 15px; letter-spacing: -0.01em; }
+.toc a.final { background: var(--accent-soft); border-color: var(--accent); }
+.toc .n { font-family: var(--mono); font-size: 11px; color: var(--accent); }
+.toc small { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+
+.book { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; padding: 40px 0 24px; align-items: start; }
+.rail { position: sticky; top: 92px; display: flex; flex-direction: column; gap: 4px; }
+.rail .label { margin-bottom: 8px; }
+.rail a { display: grid; grid-template-columns: 28px 1fr; gap: 6px; align-items: baseline; padding: 8px 10px; border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 14px; border-left: 2px solid transparent; transition: color .2s, background .2s, border-color .2s; }
+.rail a span { font-family: var(--mono); font-size: 11px; }
+.rail a.on { color: var(--text); background: var(--tile); border-left-color: var(--accent-fill); }
+.rail .meter { height: 4px; border-radius: 2px; background: var(--border); margin: 14px 10px 0; overflow: hidden; }
+.rail .meter i { display: block; height: 100%; width: 0; background: var(--accent-fill); transition: width .15s linear; }
+
+.chapter { padding: 8px 0 72px; scroll-margin-top: 90px; }
+.ch-head { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+.ch-kicker { display: flex; gap: 12px; align-items: center; font-family: var(--mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+.ch-kicker em { font-style: normal; color: var(--muted); }
+.ch-head h2 { font-size: clamp(30px, 3.6vw, 48px); }
+.ch-head h2 i { font-family: var(--serif); font-weight: 400; color: var(--accent); }
+.ch-head p.lead { color: var(--muted); font-size: 18px; max-width: 62ch; }
+.chapter.final .ch-head { padding: 28px; border-radius: 16px; border: 1px solid var(--accent); background: var(--accent-soft); }
+
+/* milestone timeline */
+.miles { position: relative; display: flex; flex-direction: column; gap: 26px; padding-left: 34px; margin: 8px 0 32px; }
+.miles::before { content: ""; position: absolute; left: 9px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
+.miles .line { position: absolute; left: 9px; top: 6px; width: 2px; height: calc(100% - 12px); background: var(--accent-fill); transform-origin: 50% 0; transform: scaleY(0); }
+.mile { position: relative; display: flex; flex-direction: column; gap: 6px; }
+.mile::before { content: ""; position: absolute; left: -31px; top: 5px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 2px solid var(--muted); transition: background .3s, border-color .3s, box-shadow .3s; }
+.mile.lit::before { background: var(--accent-fill); border-color: var(--accent-fill); box-shadow: 0 0 0 5px var(--accent-soft); }
+.mile time { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+.mile b { font-size: 18px; letter-spacing: -0.01em; }
+.mile p { color: var(--muted); max-width: 62ch; }
+.mile.key b::after { content: " ★"; color: var(--accent); }
+
+/* reveal animation */
+.rv { opacity: 0; transform: translateY(18px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+.rv.in { opacity: 1; transform: none; }
+@media (max-width: 760px) { main .reel { grid-template-columns: minmax(0, 1fr); } main .reel video { max-width: 320px; margin: 0 auto; } }
+@media (prefers-reduced-motion: reduce) { .doc .pg { transform: none !important; } .rv { opacity: 1; transform: none; } .miles .line { transform: none; } }
+
+.duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 8px 0 24px; align-items: start; }
+.fig.free img { aspect-ratio: auto; }
+.fig.sq img { aspect-ratio: 1 / 1; }
+.fig.wide img { aspect-ratio: 3 / 2; object-position: 30% 40%; }
+.fig.tall img { aspect-ratio: auto; max-height: 620px; object-fit: contain; background: var(--tile2); }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 8px 0 28px; }
+.stats .tile { padding: 18px; display: flex; flex-direction: column; gap: 6px; }
+.stats .num { font-size: 40px; }
+.stats small { color: var(--muted); font-size: 13px; }
+
+/* words-matter toggle */
+.words { padding: 24px; display: flex; flex-direction: column; gap: 14px; margin: 8px 0 28px; }
+.words .say { font-family: var(--serif); font-size: clamp(26px, 3vw, 38px); line-height: 1.15; min-height: 2.4em; transition: opacity .25s; }
+.words .say.swap { opacity: 0; }
+.words .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; padding: 3px; gap: 3px; }
+.seg button { font: 500 13px/1 var(--sans); color: var(--muted); background: transparent; border: 0; border-radius: 999px; padding: 9px 14px; cursor: pointer; }
+.seg button.on { background: var(--accent-fill); color: var(--accent-ink); }
+
+/* business card flip */
+.flip { perspective: 1400px; cursor: pointer; border: 0; padding: 0; background: none; width: 100%; text-align: left; }
+.flip .card3d { position: relative; aspect-ratio: 1200 / 750; transform-style: preserve-3d; transition: transform .8s cubic-bezier(.3,.7,.2,1); }
+.flip.on .card3d { transform: rotateY(180deg); }
+.flip img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 12px; backface-visibility: hidden; box-shadow: 0 20px 50px -25px rgba(0,0,0,.7); }
+.flip img.back { transform: rotateY(180deg); }
+.flip + figcaption { margin-top: 8px; }
+
+/* proposal stepper */
+.stepper { padding: 22px; display: flex; flex-direction: column; gap: 16px; margin: 8px 0 28px; }
+.stepper .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.stepper .tabs button { font: 500 13px/1 var(--mono); color: var(--muted); background: var(--tile2); border: 1px solid var(--border); border-radius: 999px; padding: 9px 13px; cursor: pointer; transition: all .2s; }
+.stepper .tabs button.on { color: var(--accent-ink); background: var(--accent-fill); border-color: var(--accent-fill); }
+.stepper .pane { display: none; flex-direction: column; gap: 8px; animation: rise .45s cubic-bezier(.2,.7,.2,1); }
+.stepper .pane.on { display: flex; }
+.stepper .pane b { font-size: 19px; }
+.stepper .pane ul { margin: 0; padding-left: 20px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* carousel viewer */
+.viewer { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 32px; align-items: center; margin: 8px 0 28px; }
+.stage { position: relative; aspect-ratio: 4 / 5; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: var(--tile2); touch-action: pan-y; }
+.stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: translateX(24px) scale(.98); transition: opacity .45s, transform .45s cubic-bezier(.2,.7,.2,1); }
+.stage img.on { opacity: 1; transform: none; }
+.vctl { display: flex; flex-direction: column; gap: 14px; }
+.vctl .beat { font-family: var(--mono); font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+.vctl p.why { font-size: 18px; min-height: 4.5em; }
+.vctl .btns { display: flex; gap: 8px; align-items: center; }
+.vctl .btns button { font: 500 14px/1 var(--sans); color: var(--text); background: var(--tile); border: 1px solid var(--border); border-radius: 999px; padding: 10px 14px; cursor: pointer; }
+.vctl .btns button:hover { border-color: var(--accent); }
+.dots { display: flex; gap: 6px; margin-left: 8px; }
+.dots i { width: 8px; height: 8px; border-radius: 50%; background: var(--border); transition: background .2s, transform .2s; }
+.dots i.on { background: var(--accent-fill); transform: scale(1.25); }
+
+/* journey */
+.journey { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 8px 0 28px; counter-reset: j; }
+.journey .tile { padding: 18px; display: flex; flex-direction: column; gap: 8px; position: relative; }
+.journey .tile b { font-size: 17px; }
+.journey .tile p { color: var(--muted); font-size: 14px; }
+.journey .tile .kpi { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-top: auto; }
+.journey .tile.go { border-color: var(--accent); background: var(--accent-soft); }
+.targets { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 8px 0 28px; }
+.targets .tile { padding: 18px; display: flex; flex-direction: column; gap: 6px; }
+.targets .num { font-size: 34px; }
+.targets small { color: var(--muted); font-size: 13px; }
+.personas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 8px 0 24px; }
+.personas .tile { padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+.personas .label { color: var(--accent); }
+.personas p { color: var(--muted); }
+.story2 p, .story2 li { font-size: 17px; line-height: 1.6; }
+.story2 > p { margin-bottom: 16px; max-width: 66ch; }
+.story2 ul { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; margin: 0 0 22px; }
+.callout { padding: 20px 22px; border-left: 3px solid var(--accent-fill); background: var(--tile); border-radius: 0 12px 12px 0; margin: 8px 0 24px; }
+.callout p { font-family: var(--serif); font-size: 24px; line-height: 1.25; }
+.end { text-align: left; padding: 40px 0 72px; display: flex; flex-direction: column; gap: 16px; }
+
+/* document shelf */
+.docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px; margin: 8px 0 32px; }
+.doc { display: flex; flex-direction: column; gap: 8px; color: var(--text); text-decoration: none; }
+.doc .pg { aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #fff; transform: rotate(-1.2deg); transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; box-shadow: 0 14px 30px -20px rgba(0,0,0,.6); }
+.doc:nth-child(even) .pg { transform: rotate(1.2deg); }
+.doc:hover .pg, .doc:focus-visible .pg { transform: translateY(-6px) rotate(0); box-shadow: var(--glow); }
+.doc img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.doc b { font-size: 14px; line-height: 1.3; }
+.doc small { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.doc small::after { content: " ↗"; color: var(--accent); }
+
+/* video reel */
+.reel { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 32px; align-items: start; margin: 8px 0 28px; }
+.reel video { width: 100%; aspect-ratio: 9 / 16; border-radius: 14px; border: 1px solid var(--border); background: #000; display: block; }
+.reel-ctl { min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.reel-ctl button { display: grid; grid-template-columns: 64px 1fr; gap: 14px; align-items: center; text-align: left; padding: 10px; border-radius: 12px; border: 1px solid var(--border); background: var(--tile); color: var(--text); cursor: pointer; font: inherit; transition: border-color .2s, transform .2s, background .2s; }
+.reel-ctl button:hover { transform: translateX(4px); border-color: var(--accent); }
+.reel-ctl button.on { border-color: var(--accent); background: var(--accent-soft); }
+.reel-ctl button > span { min-width: 0; }
+.reel-ctl button img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; }
+.reel-ctl button b { display: block; font-size: 15px; }
+.reel-ctl button small { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.team { margin: 8px 0 8px; max-width: 960px; }
+.team img { aspect-ratio: auto; }
+
+/* presentation mode */
+.deck-bar { display: none; }
+body.presenting { overflow: hidden; }
+body.presenting .top, body.presenting .rail, body.presenting .toc, body.presenting .hero-ctas, body.presenting .hint,
+body.presenting .prevnext, body.presenting .band, body.presenting footer, body.presenting .crumbs, body.presenting .skip, body.presenting .progress { display: none !important; }
+body.presenting [data-slide] { display: none !important; }
+body.presenting [data-slide].on {
+  display: flex !important; flex-direction: column; justify-content: safe center; gap: 24px; position: fixed; inset: 0; z-index: 50;
+  padding: 5vh 7vw 9vh; background-color: var(--bg); background-image: radial-gradient(var(--grid) 1px, transparent 1.5px); background-size: 24px 24px; overflow: auto;
+}
+body.presenting [data-slide].on > * { width: 100%; max-width: 1400px; margin-left: auto; margin-right: auto; }
+body.presenting [data-slide].on .rv { opacity: 1; transform: none; }
+body.presenting [data-slide].on p, body.presenting [data-slide].on li { font-size: clamp(18px, 1.7vw, 28px); }
+body.presenting [data-slide].on .mile b { font-size: clamp(20px, 1.8vw, 30px); }
+body.presenting [data-slide].on .fig img { max-height: 56vh; }
+body.presenting [data-slide].on .stage { max-height: 62vh; }
+body.presenting [data-slide].on .team img { max-height: 44vh; width: auto; }
+body.presenting [data-slide].on .reel video { max-height: 70vh; width: auto; margin: 0 auto; }
+body.presenting [data-slide].on .docs { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+body.presenting .deck-bar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; justify-content: space-between; align-items: center; padding: 12px 24px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.deck-bar button { font: inherit; color: var(--text); background: var(--tile); border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+
+@media (max-width: 1000px) {
+  .book { grid-template-columns: 1fr; gap: 0; } .rail { display: none; }
+  .toc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats, .targets, .journey { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .viewer { grid-template-columns: 1fr; } .duo, .personas { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body class="frame"><span class="bk"></span>
+<div class="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../../"><b>Boss Huang</b><span>黃柏實</span></a>
+  <nav class="nav" aria-label="Primary"><a href="../../work/" aria-current="page">Work</a><a href="../../photography/" data-short="Photos"><span>Photography</span></a><a href="../../about/">About</a><a href="../../resume/">Résumé</a><a href="../../contact/">Contact</a></nav>
+  <div class="top-right">
+    <span class="status"><i></i>San Francisco · Minerva ’27</span>
+    <button class="theme" type="button" data-theme-toggle aria-label="Toggle light / dark theme">
+      <svg class="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</div></header>
+
+<main id="main" class="wrap">
+<!-- ===== Cover ===== -->
+<section class="hero2" data-slide>
+  <div class="crumbs"><a href="../../">Home</a><span>/</span><a href="../../work/">Work</a><span>/</span>Larkin Street Youth Services</div>
+  <div class="chips"><span class="chip">Marketing</span><span class="chip">YouthForce intern</span><span class="chip">Late summer – Oct 2026</span></div>
+  <h1>From the other side of <i>the door</i></h1>
+  <p class="hook">My YouthForce marketing internship at Larkin Street Youth Services, told in chapters: learning the brand, filming Performing Arts Night, writing, the stage and the lens, and a final integrated campaign that launches in November.</p>
+  <div class="hero-ctas"><button class="btn btn-primary" type="button" data-present>Present</button><a class="btn btn-ghost" href="#ch5">Skip to the final project</a><span class="hint">Present: ← → or space · F full screen · Esc exit</span></div>
+  <nav class="toc" aria-label="Chapters">
+    <a href="#ch0"><span class="n">00</span><b>Both sides of the door</b><small>Prologue</small></a>
+    <a href="#ch1"><span class="n">01</span><b>Listening first</b><small>Aug 18–28</small></a>
+    <a href="#ch2"><span class="n">02</span><b>Pass the Mic</b><small>Aug 20 – Sep 4</small></a>
+    <a href="#ch3"><span class="n">03</span><b>Words that work</b><small>Aug 20 – Oct 23</small></a>
+    <a href="#ch4"><span class="n">04</span><b>The stage and the lens</b><small>Sep 4 – Oct 14</small></a>
+    <a href="#ch5" class="final"><span class="n">05 · Final project</span><b>An integrated campaign</b><small>Launches Nov 2</small></a>
+  </nav>
+</section>
+
+<div class="book">
+  <aside class="rail" aria-label="Chapter navigation">
+    <span class="label">Chapters</span>
+    <a href="#ch0" data-rail="ch0"><span>00</span>Prologue</a>
+    <a href="#ch1" data-rail="ch1"><span>01</span>Listening first</a>
+    <a href="#ch2" data-rail="ch2"><span>02</span>Pass the Mic</a>
+    <a href="#ch3" data-rail="ch3"><span>03</span>Words that work</a>
+    <a href="#ch4" data-rail="ch4"><span>04</span>Stage and lens</a>
+    <a href="#ch5" data-rail="ch5"><span>05</span>Final project</a>
+    <a href="#end" data-rail="end"><span>→</span>What’s next</a>
+    <div class="meter"><i></i></div>
+  </aside>
+
+  <div class="story2">
+  <!-- ===== 00 Prologue ===== -->
+  <section class="chapter" id="ch0">
+    <div data-slide>
+      <div class="ch-head rv"><div class="ch-kicker">Chapter 00 <em>Prologue</em></div><h2>Both sides of <i>the door</i></h2></div>
+      <p class="rv">The first time I walked into Larkin Street, I wasn’t an intern. I was a young person who needed a bed. I joined YouthForce in late summer 2026 to bring that lived perspective to the Marketing &amp; Communications team, and to do real work the team could use after I left.</p>
+      <div class="stats rv"><div class="tile"><span class="num" data-count>4</span><small>Pass the Mic videos edited</small></div><div class="tile"><span class="num" data-count>6</span><small>youth success stories written</small></div><div class="tile"><span class="num" data-count>3</span><small>events filmed or photographed</small></div><div class="tile"><span class="num" data-count>5</span><small>launch-ready campaign assets</small></div></div>
+      <p class="rv">About 20 hours a week, between the Larkin Street Academy and the admin office on Market Street, with check-ins twice a week with my supervisors, Lea Fabro and Czeric Bennett. The tools: HubSpot, Canva, Asana and WordPress.</p>
+    </div>
+  </section>
+
+  <!-- ===== 01 Listening ===== -->
+  <section class="chapter" id="ch1">
+    <div data-slide>
+      <div class="ch-head rv"><div class="ch-kicker">Chapter 01 <em>Aug 18–28</em></div><h2>Listening <i>first</i></h2><p class="lead">Larkin Street had just rebranded. Before making anything, I studied how it talks.</p></div>
+      <div class="miles"><span class="line"></span>
+        <div class="mile rv"><time>Aug 18</time><b>Branding recap and reflection</b><p>Studied the new brand, the website and every social channel. Four traits stood out: asset framing, brevity (impact headlines of 4–8 words), voice that shifts by audience, and 40+ years of Larkin Yellow.</p></div>
+                <div class="mile rv"><time>Aug 19–28</time><b>Learned the platforms</b><p>HubSpot for email and social, Canva for content, Asana for projects, WordPress for the website.</p></div>
+      </div>
+    </div>
+    <div data-slide>
+      <div class="words tile rv" data-words>
+        <span class="label">Try it: the same person, two framings</span>
+        <p class="say" data-say>“A homeless young person.”</p>
+        <div class="row"><div class="seg" role="group" aria-label="Framing"><button type="button" data-w="0" class="on">Crisis framing</button><button type="button" data-w="1">Asset framing</button></div></div>
+        <p class="hint" data-why>Leads with the hardship, so it becomes who they are.</p>
+      </div>
+      <p class="rv">That one rule, lead with the person and not the crisis, changed how I wrote everything that followed. Homelessness is one chapter, not the whole story.</p>
+    </div>
+  </section>
+
+  <!-- ===== 02 Pass the Mic ===== -->
+  <section class="chapter" id="ch2">
+    <div data-slide>
+      <div class="ch-head rv"><div class="ch-kicker">Chapter 02 <em>Aug 20 – Sep 4</em></div><h2>Pass the <i>Mic</i></h2><p class="lead">Performing Arts Night 2026, “Golden Revolution,” at A.C.T.’s Strand Theater: my first time behind the camera for Larkin Street.</p></div>
+      <div class="duo">
+        <figure class="fig sq rv"><img src="../../assets/img/larkin/pass-the-mic-boss.jpg" alt="Boss Huang interviewing a guest with a handheld microphone at Performing Arts Night 2026" loading="lazy"><figcaption>Interviewing guests at Performing Arts Night</figcaption></figure>
+        <div class="miles"><span class="line"></span>
+          <div class="mile rv"><time>Aug 20</time><b>Wrote the interview guide</b><p>A six-page on-camera guide: questions for staff, youth, performers, guests, donors and leadership, plus a production checklist (media releases first, full-sentence answers, vertical and horizontal).</p></div>
+          <div class="mile rv"><time>Aug 21</time><b>Filmed the night</b><p>Guest interviews, photos and B-roll from reception to standing ovation.</p></div>
+          <div class="mile rv"><time>Aug 26</time><b>Social post</b><p>Selected and edited the photos and wrote the caption.</p></div>
+          <div class="mile rv key"><time>Sep 4</time><b>Four Pass the Mic videos</b><p>A 90-second main video and three 30-second cuts with performers and staff, each delivered captioned and clean, so the team can reuse them across channels.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 03 Words ===== -->
+  <section class="chapter" id="ch3">
+    <div data-slide>
+      <div class="ch-head rv"><div class="ch-kicker">Chapter 03 <em>Aug 20 – Oct 23</em></div><h2>Words that <i>work</i></h2><p class="lead">Writing for donors, families, youth and the public, each in its own register.</p></div>
+      <div class="miles"><span class="line"></span>
+        <div class="mile rv"><time>Aug 20</time><b>Proofread a major-gifts case for support</b><p>Annotated a 17-page case for support: 11 corrections, 14 style suggestions and 4 fact-check queries, including statistics that didn’t match across pages, caught before it reached donors.</p></div>
+        <div class="mile rv"><time>Aug 26</time><b>Six youth success stories</b><p>Five young people’s stories and my own, written in the format of the Our Impact page: who the young person is first, the programs that helped, and where they’re headed. Every quote is verbatim from a source, with leads for future editions.</p></div>
+        <div class="mile rv"><time>Aug 28</time><b>“Giving Back” blog and social captions</b><p>A community story about a family that turned a birthday party into kit-building for young people at Larkin Street.</p></div>
+        <div class="mile rv key"><time>Oct 23</time><b>My own story for the blog</b><p>A reflection on the internship for young people thinking about YouthForce.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 04 Stage and lens ===== -->
+  <section class="chapter" id="ch4">
+    <div data-slide>
+      <div class="ch-head rv"><div class="ch-kicker">Chapter 04 <em>Sep 4 – Oct 14</em></div><h2>The stage and <i>the lens</i></h2><p class="lead">Larkin Street gave me time to build my own brand, then put me in front of a room.</p></div>
+      <div class="duo">
+        <figure class="rv"><button class="flip" type="button" aria-label="Flip business card" data-flip><div class="card3d"><img src="../../assets/img/larkin/card-front.jpg" alt="Front of Boss Huang's business card: Technical Strategist, AI and Strategy"><img class="back" src="../../assets/img/larkin/card-back.jpg" alt="Back of the card: track record of NT$130M budget, 800K+ people reached, 285-person team"></div></button><figcaption class="hint">Tap the card to flip it · designed by me, printed by Larkin Street</figcaption></figure>
+        <div class="miles"><span class="line"></span>
+          <div class="mile rv"><time>Sep 4</time><b>Personal business cards</b><p>Dedicated personal-branding time: I designed the cards and refreshed my portfolio, and Larkin Street printed them.</p></div>
+          <div class="mile rv key"><time>Sep 24</time><b>Speaker, 20th Bay Area CFO of the Year Awards</b><p>Told a room of finance leaders how Larkin Street invested in me before I could prove the return, and asked them to do the same for others.</p></div>
+          <div class="mile rv"><time>Oct 14</time><b>Ballot Measure and Voter Registration Resource Fair</b><p>Event photography, including Mayor Daniel Lurie’s visit.</p></div>
+        </div>
+      </div>
+    </div>
+    <div data-slide>
+      <div class="duo">
+        <figure class="fig wide rv"><img src="../../assets/img/larkin/cfo-speech.jpg" alt="Boss Huang smiling at the podium at the Bay Area CFO of the Year Awards" loading="lazy"><figcaption>Speaking at the CFO of the Year Awards, Sep 24</figcaption></figure>
+        <figure class="fig wide rv"><img src="../../assets/img/photography/38-get-out-the-vote-800.jpg" alt="Mayor Daniel Lurie at Larkin Street’s Ballot and Voting Fair" loading="lazy"><figcaption>Mayor Daniel Lurie at the Ballot and Voting Fair, Oct 14 · photo by me</figcaption></figure>
+      </div>
+      <div class="callout rv"><p>“People believed in my future returns, even before I could prove it.”</p><span class="hint">From my CFO Awards speech</span></div>
+    </div>
+  </section>
+
+  <!-- ===== 05 Final project ===== -->
+  <section class="chapter final" id="ch5">
+    <div data-slide>
+      <div class="ch-head rv"><div class="ch-kicker">Chapter 05 <em>Final project · Sep 2 – Oct 28</em></div><h2>An integrated <i>campaign</i></h2><p class="lead">For Bay Area working adults, about what happens at Larkin Street after housing. It launches Nov 2, and the full case study follows once it’s public.</p></div>
+      <div class="miles"><span class="line"></span>
+        <div class="mile rv"><time>Sep</time><b>Listened first</b><p>Interviews with staff and the arts team set the story and the naming rules.</p></div>
+        <div class="mile rv"><time>Sep 30 – Oct 7</time><b>Strategy</b><p>An audience-specific SWOT, personas, customer journeys, a timeline and a KPI for every stage.</p></div>
+        <div class="mile rv key"><time>Oct 9</time><b>Led the development team meeting</b><p>Feedback from fundraising leadership sharpened the theme and who shares it first.</p></div>
+        <div class="mile rv"><time>Oct 13–19</time><b>Built the assets</b><p>A social series, an email, print and a volunteer survey, in the Canva and HubSpot formats the team already uses.</p></div>
+        <div class="mile rv key"><time>Oct 28</time><b>Handed off</b><p>Final presentation to the team, ready to measure from launch.</p></div>
+      </div>
+    </div>
+    <div data-slide>
+      <span class="label rv">What I took from it</span>
+      <ul class="rv">
+        <li><b>Listen before you make anything.</b> Interviews and feedback shaped every version.</li>
+        <li><b>One goal beats three.</b> The plan got stronger each time it got simpler: four versions, each narrower than the last.</li>
+        <li><b>Design for the handoff.</b> Everything lives in formats the team already uses.</li>
+        <li><b>Next time:</b> start consent and filming earlier, and name a video editor and budget up front.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="end" id="end" data-slide>
+    <span class="label rv">What’s next</span>
+    <h2 class="rv">Thank you, Larkin Street.</h2>
+    <p class="rv">To Czeric, Lea and everyone who made time for my questions. I graduate from Minerva University in May 2027, and I’m taking this way of telling stories with me: lead with people, say one thing clearly, and listen first.</p>
+    <figure class="fig team rv"><img src="../../assets/img/larkin/team-cfo-awards.jpg" alt="Boss in a yellow shirt giving a thumbs-up with the Larkin Street team at the Bay Area CFO of the Year Awards" loading="lazy"><figcaption>With the Larkin Street team at the CFO of the Year Awards, Sep 24</figcaption></figure>
+  </section>
+  </div>
+</div>
+
+<nav class="prevnext" aria-label="More work"><a href="../../work/haggle/"><span class="label">← Previous</span><b>Haggle: the merchant’s counter-agent</b></a><a href="../../work/youth-commission/"><span class="label">Next →</span><b>Youth Commissioner → Youth Affairs Bureau</b></a></nav>
+<section class="band" aria-label="Contact">
+  <img src="../../assets/img/contact-mosaic.jpg" alt="" loading="lazy">
+  <div class="shade"></div>
+  <div class="in">
+    <span class="label">Say hi</span>
+    <div style="display:flex;flex-direction:column;gap:18px;">
+      <p>Working on something that needs strategy and a builder in the same room? Let’s talk.</p>
+      <div class="ctas"><a class="btn btn-primary" href="mailto:bosshtw@gmail.com">Email me</a><a class="btn btn-ghost" href="../../contact/">Contact form</a></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="l"><a href="mailto:bosshtw@gmail.com">bosshtw@gmail.com</a><div class="soc"><a href="https://linkedin.com/in/boss-huang" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://www.youtube.com/c/BossHuangVlogs" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.instagram.com/huangbossplays/" target="_blank" rel="noopener">Instagram ↗</a></div></div>
+  <div class="r"><span>© <span data-year>2026</span> Boss Huang · 黃柏實</span><span>Technical Strategist · AI &amp; Strategy</span></div>
+</footer>
+</main>
+<div class="deck-bar" aria-live="polite"><span data-slidepos></span><span><button type="button" data-dprev>← Back</button> <button type="button" data-dnext>Next →</button> <button type="button" data-exit>Exit</button></span></div>
+<script src="../../assets/js/site.js" defer></script>
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Reveal on scroll
+  var rvs = [].slice.call(document.querySelectorAll('.rv'));
+  if (!reduce && 'IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } }); }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+    rvs.forEach(function (el, i) { el.style.transitionDelay = (Math.min(i % 4, 3) * 70) + 'ms'; ro.observe(el); });
+  } else rvs.forEach(function (el) { el.classList.add('in'); });
+
+  // Scroll progress, milestone line drawing, active chapter
+  var bar = document.querySelector('.progress'), meter = document.querySelector('.rail .meter i');
+  var miles = [].slice.call(document.querySelectorAll('.miles'));
+  var chapters = [].slice.call(document.querySelectorAll('.chapter, #end'));
+  var railLinks = {}; [].slice.call(document.querySelectorAll('[data-rail]')).forEach(function (a) { railLinks[a.getAttribute('data-rail')] = a; });
+  function onScroll() {
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight, p = max > 0 ? h.scrollTop / max : 0;
+    bar.style.transform = 'scaleX(' + p + ')'; if (meter) meter.style.width = (p * 100) + '%';
+    var vh = window.innerHeight;
+    miles.forEach(function (m) {
+      var r = m.getBoundingClientRect(), f = Math.max(0, Math.min(1, (vh * 0.75 - r.top) / r.height));
+      var line = m.querySelector('.line'); if (line && !reduce) line.style.transform = 'scaleY(' + f + ')';
+      [].slice.call(m.querySelectorAll('.mile')).forEach(function (el) { el.classList.toggle('lit', el.getBoundingClientRect().top < vh * 0.75); });
+    });
+    var cur = null; chapters.forEach(function (c) { if (c.getBoundingClientRect().top < vh * 0.35) cur = c.id; });
+    Object.keys(railLinks).forEach(function (k) { railLinks[k].classList.toggle('on', k === cur); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); window.addEventListener('resize', onScroll); onScroll();
+
+  // Words-matter toggle
+  var w = document.querySelector('[data-words]');
+  if (w) {
+    var lines = [['“A homeless young person.”', 'Leads with the hardship, so it becomes who they are.'], ['“A young person experiencing homelessness.”', 'Leads with the person. Homelessness is a chapter, not an identity.']];
+    var say = w.querySelector('[data-say]'), why = w.querySelector('[data-why]');
+    w.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-w]'); if (!b) return; var k = +b.getAttribute('data-w');
+      [].slice.call(w.querySelectorAll('[data-w]')).forEach(function (x) { x.classList.toggle('on', x === b); });
+      say.classList.add('swap'); setTimeout(function () { say.textContent = lines[k][0]; why.textContent = lines[k][1]; say.classList.remove('swap'); }, 200);
+    });
+  }
+
+  // Business card flip
+  var flip = document.querySelector('[data-flip]'); if (flip) flip.addEventListener('click', function () { flip.classList.toggle('on'); });
+
+  // Proposal stepper
+  var st = document.querySelector('[data-stepper]');
+  if (st) st.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-step]'); if (!b) return; var k = +b.getAttribute('data-step');
+    [].slice.call(st.querySelectorAll('[data-step]')).forEach(function (x, i) { x.classList.toggle('on', i === k); });
+    [].slice.call(st.querySelectorAll('.pane')).forEach(function (x, i) { x.classList.toggle('on', i === k); });
+  });
+
+  // Carousel viewer
+  var v = document.querySelector('[data-viewer]');
+  if (v) {
+    var imgs = [].slice.call(v.querySelectorAll('[data-stage] img')), dots = [].slice.call(v.querySelectorAll('[data-dots] i')), ci = 0;
+    var beats = [['The hook', 'Open with a first everyone has, before Larkin Street is even named.'], ['The feeling', 'Make it personal: the pride of doing something on your own.'], ['The turn', 'Same firsts, harder start. Larkin Street enters the story.'], ['The proof', 'One real number, then what comes after housing.'], ['The ask', 'Two asks that cost nothing: tell us your first job, and get the stories.']];
+    function go(n) { ci = (n + imgs.length) % imgs.length; imgs.forEach(function (im, i) { im.classList.toggle('on', i === ci); }); dots.forEach(function (d, i) { d.classList.toggle('on', i === ci); }); v.querySelector('[data-beat]').textContent = (ci + 1) + ' / 5 · ' + beats[ci][0]; v.querySelector('[data-why]').textContent = beats[ci][1]; }
+    v.querySelector('[data-prev]').addEventListener('click', function () { go(ci - 1); });
+    v.querySelector('[data-next]').addEventListener('click', function () { go(ci + 1); });
+    var stage = v.querySelector('[data-stage]'), x0 = null;
+    stage.addEventListener('click', function () { go(ci + 1); });
+    stage.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    stage.addEventListener('touchend', function (e) { if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(ci + (dx < 0 ? 1 : -1)); x0 = null; });
+    v.go = go; v.ci = function () { return ci; };
+  }
+
+  // Video reel
+  [].forEach.call(document.querySelectorAll('[data-reel]'), function (r) {
+    var vid = r.querySelector('[data-reel-video]'), bs = [].slice.call(r.querySelectorAll('button[data-src]'));
+    bs.forEach(function (b) { b.addEventListener('click', function () { bs.forEach(function (x) { x.classList.toggle('on', x === b); }); vid.poster = b.dataset.poster; vid.src = b.dataset.src; vid.play().catch(function () {}); }); });
+  });
+
+  // Presentation mode
+  var slides = [].slice.call(document.querySelectorAll('[data-slide]')), si = 0, pos = document.querySelector('[data-slidepos]');
+  function show(n) { si = Math.max(0, Math.min(slides.length - 1, n)); slides.forEach(function (s, k) { s.classList.toggle('on', k === si); }); [].forEach.call(document.querySelectorAll('video'), function (v) { v.pause(); }); pos.textContent = (si + 1) + ' / ' + slides.length; fit(slides[si]); }
+  function fit(s) { var kids = [].slice.call(s.children); kids.forEach(function (k) { k.style.zoom = ''; }); var r = s.clientHeight / s.scrollHeight; if (r < 1) kids.forEach(function (k) { k.style.zoom = Math.max(0.55, r * 0.97); }); }
+  window.addEventListener('resize', function () { if (document.body.classList.contains('presenting')) fit(slides[si]); });
+  function start() { document.body.classList.add('presenting'); show(0); }
+  function stop() { document.body.classList.remove('presenting'); slides.forEach(function (s) { s.classList.remove('on'); [].forEach.call(s.children, function (k) { k.style.zoom = ''; }); }); if (document.fullscreenElement) document.exitFullscreen(); }
+  document.querySelector('[data-present]').addEventListener('click', start);
+  document.querySelector('[data-dprev]').addEventListener('click', function () { show(si - 1); });
+  document.querySelector('[data-dnext]').addEventListener('click', function () { show(si + 1); });
+  document.querySelector('[data-exit]').addEventListener('click', stop);
+  document.addEventListener('keydown', function (e) {
+    if (!document.body.classList.contains('presenting')) return;
+    var inViewer = v && slides[si].contains(v);
+    if (e.key === 'ArrowDown' && inViewer) { e.preventDefault(); v.go(v.ci() + 1); return; }
+    if (e.key === 'ArrowUp' && inViewer) { e.preventDefault(); v.go(v.ci() - 1); return; }
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); show(si + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); show(si - 1); }
+    else if (e.key === 'Escape') stop();
+    else if (e.key === 'f' || e.key === 'F') { if (!document.fullscreenElement) document.documentElement.requestFullscreen(); else document.exitFullscreen(); }
+  });
+  if (location.hash === '#present') start();
+})();
+</script>
+</body>
+</html>

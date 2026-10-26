@@ -1,3 +1,12 @@
 .DS_Store
 
 * outputs/
+
+# Held until public (Larkin Street: unlaunched campaign, internal docs, unconfirmed videos)
+_held/
+assets/docs/larkin/
+assets/video/larkin/
+assets/img/larkin/docs/
+assets/img/larkin/carousel-*.jpg
+assets/img/larkin/poster.jpg
+assets/img/larkin/welcome-email.jpg
